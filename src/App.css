@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.PosterBox{
+  padding: 10px 25px 10px 25px;
+  height: auto;
+  background-color: #321515;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.PosterBox img:hover {
+  size: 700px;
+  overflow: hidden;
+}
