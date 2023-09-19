@@ -12,14 +12,12 @@
 
 .NavBar ul{
  display: flex;
-flex-direction: row;
-list-style: none;
+ list-style: none;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
 }
 .NavBar ul li{
     margin-left: 50px;
     text-decoration: none;
-}
-
-.carrito{
-    translate: 1400px;
 }
