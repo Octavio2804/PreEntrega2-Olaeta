@@ -1,18 +1,31 @@
 
 import './App.css'
+// BROWSER ROUTER
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+// COMPONENTS
 import ItemListcontainer from './components/ItemListContainer/itemListContainer';
-import NavBar from './components/NavBar/NavBar'
+import NavBar from './components/navBar/navBar';
 import Header from './components/header/header';
+// PAGES
+import AboutPage from './pages/AboutPage';
+import CategoriesPage from './pages/CategoriesPage'
 
 
 const App = ()=> {
   return(
+    <Router>
     <>
     <div>
       <Header />
       <NavBar />
     </div>
 
+    </>
+    <Routes>
+      {/*  MAIN PAGE */}
+    <Route 
+    path="/" 
+    element={
     <div className='PosterBox'>
     <ItemListcontainer 
     img="https://m.media-amazon.com/images/I/81Bivc7COzL.jpg"
@@ -31,7 +44,12 @@ const App = ()=> {
     title="Oppenheimer"
     price="Añadir al carrito: $3500"/>
     </div>
-    </>
+    } 
+  />
+  <Route path="/categories" element={<CategoriesPage />} />
+  <Route path="/about" element={<AboutPage />} />
+  </Routes>
+  </Router>
   );
 };
 

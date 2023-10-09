@@ -1,23 +1,33 @@
-.NavBar{
-    background-color: white;
-    color:  black;
+.NavBar {
     display: flex;
-    justify-content: space-between;
-    font-size: 20px;
+    justify-content: space-between; /* This will space out the ul and CartWidget */
     align-items: center;
-    margin-left: 20px;
-    padding: 10px;
+    background-color: white;
+    padding: 1rem 2rem;
     font-family: Roboto;
+    color: black;
 }
 
-.NavBar ul{
- display: flex;
- list-style: none;
- justify-content: center;
- align-items: center;
- cursor: pointer;
+.NavBar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
-.NavBar ul li{
-    margin-left: 50px;
+
+.NavBar li {
+    cursor: pointer;
+    color: black;
+}
+
+.NavBar a {
     text-decoration: none;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.NavBar a:hover {
+    color: rgb(249, 7, 7); 
+    font-size: 17px;
+    transition: all .5s ease;
 }
