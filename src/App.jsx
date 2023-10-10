@@ -9,6 +9,8 @@ import Header from './components/header/header';
 // PAGES
 import AboutPage from './pages/AboutPage';
 import CategoriesPage from './pages/CategoriesPage'
+import ComicsPage from './pages/ComicsPage';
+import DetailPage from './pages/DetailPage';
 
 
 const App = ()=> {
@@ -48,6 +50,8 @@ const App = ()=> {
   />
   <Route path="/categories" element={<CategoriesPage />} />
   <Route path="/about" element={<AboutPage />} />
+  <Route path="/comics" element={<ComicsPage />} />
+  <Route path="/detail/:id" element={<DetailPage />} />
   </Routes>
   </Router>
   );

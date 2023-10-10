@@ -1,0 +1,32 @@
+.comic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.comic-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.comic-item h2 {
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.comic-item img {
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.comic-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a312f; 
+}

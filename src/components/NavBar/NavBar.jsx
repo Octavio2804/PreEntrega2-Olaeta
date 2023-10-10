@@ -1,8 +1,6 @@
 import React from 'react'
 import "./NavBar.css"
 import CartWidget from '../CartWidget/CartWidget';
-import AboutPage from '../../pages/AboutPage';
-import CategoriesPage from '../../pages/CategoriesPage';
 import {Link} from 'react-router-dom'
 
 
@@ -16,6 +14,7 @@ function NavBar() {
         <Link style={{ listStyle: "none" }} to="/">Home</Link>
         <Link style={{ listStyle: "none" }} to="/categories">Categories</Link>
         <Link style={{ listStyle: "none" }} to="/about">About</Link>
+        <Link style={{ listStyle: "none" }} to="/comics">Comics</Link>
         </ul>
         <CartWidget />
     </nav>
