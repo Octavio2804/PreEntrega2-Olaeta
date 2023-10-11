@@ -7,10 +7,10 @@ import ItemListcontainer from './components/ItemListContainer/itemListContainer'
 import NavBar from './components/navBar/navBar';
 import Header from './components/header/header';
 // PAGES
-import AboutPage from './pages/AboutPage';
-import CategoriesPage from './pages/CategoriesPage'
 import ComicsPage from './pages/ComicsPage';
-import DetailPage from './pages/DetailPage';
+import DetailPage from './pages/DetailPage/DetailPage';
+import TapaDuraPage from './pages/TapaDuraPage';
+import NovelasGraficasPage from './pages/NovelasGraficas';
 
 
 const App = ()=> {
@@ -48,8 +48,9 @@ const App = ()=> {
     </div>
     } 
   />
-  <Route path="/categories" element={<CategoriesPage />} />
-  <Route path="/about" element={<AboutPage />} />
+  <Route path="/tapadura" element={<TapaDuraPage />} />
+  <Route path="/novelagrafica" element={<NovelasGraficasPage />} />
+  <Route path="/comics" element={<ComicsPage />} />
   <Route path="/comics" element={<ComicsPage />} />
   <Route path="/detail/:id" element={<DetailPage />} />
   </Routes>

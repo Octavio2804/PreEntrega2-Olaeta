@@ -12,9 +12,9 @@ function NavBar() {
     <nav className='NavBar'>
         <ul>
         <Link style={{ listStyle: "none" }} to="/">Home</Link>
-        <Link style={{ listStyle: "none" }} to="/categories">Categories</Link>
-        <Link style={{ listStyle: "none" }} to="/about">About</Link>
-        <Link style={{ listStyle: "none" }} to="/comics">Comics</Link>
+        <Link style={{ listStyle: "none" }} to="/comics">Todos los Comics</Link>
+        <Link style={{ listStyle: "none" }} to="/tapadura">Comics Tapa Dura</Link>
+        <Link style={{ listStyle: "none" }} to="/novelagrafica">Novelas Gráficas</Link>
         </ul>
         <CartWidget />
     </nav>
