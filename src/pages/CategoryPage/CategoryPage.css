@@ -1,0 +1,41 @@
+.moviePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+  }
+  
+  .moviePage > div {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+  
+   
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  
+  .moviePage h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .moviePage img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .moviePage p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }

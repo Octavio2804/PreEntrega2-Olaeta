@@ -13,8 +13,8 @@ function NavBar() {
         <ul>
         <Link style={{ listStyle: "none" }} to="/">Home</Link>
         <Link style={{ listStyle: "none" }} to="/comics">Todos los Comics</Link>
-        <Link style={{ listStyle: "none" }} to="/tapadura">Comics Tapa Dura</Link>
-        <Link style={{ listStyle: "none" }} to="/novelagrafica">Novelas Gráficas</Link>
+        <Link style={{ listStyle: "none" }} to="/category/day">Top del dia</Link>
+        <Link style={{ listStyle: "none" }} to="/category/week">Top semanal</Link>
         </ul>
         <CartWidget />
     </nav>

@@ -9,8 +9,7 @@ import Header from './components/header/header';
 // PAGES
 import ComicsPage from './pages/ComicsPage';
 import DetailPage from './pages/DetailPage/DetailPage';
-import TapaDuraPage from './pages/TapaDuraPage';
-import NovelasGraficasPage from './pages/NovelasGraficas';
+import CategoryPage from './pages/CategoryPage/CategoryPage';
 
 
 const App = ()=> {
@@ -48,11 +47,14 @@ const App = ()=> {
     </div>
     } 
   />
-  <Route path="/tapadura" element={<TapaDuraPage />} />
-  <Route path="/novelagrafica" element={<NovelasGraficasPage />} />
+  // DIVS DE NAVBAR
+{/*   <Route path="/tapadura" element={<TapaDuraPage />} />
+  <Route path="/novelagrafica" element={<NovelasGraficasPage />} /> */}
   <Route path="/comics" element={<ComicsPage />} />
-  <Route path="/comics" element={<ComicsPage />} />
+  // DETAIL DE COMIC CON ID
   <Route path="/detail/:id" element={<DetailPage />} />
+  // CATEGORY DE COMIC CON ID
+  <Route path="/category/:categoryId" element={<CategoryPage />} />
   </Routes>
   </Router>
   );
