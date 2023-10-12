@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 --------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
-Primera pre entrega del curso de React Js, E-Comerce de tienda de posters
+Segunda pre entrega del curso de React Js, E-Comerce de tienda de posters. Se agregaron opciones para ver comics en lista o individualmente y ademas poder ver una lista de las peliculas más populares del dia o la semana
