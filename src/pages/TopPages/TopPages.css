@@ -1,0 +1,11 @@
+.TopPage{
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.TopPage h2{
+    margin-top: 10px;
+}

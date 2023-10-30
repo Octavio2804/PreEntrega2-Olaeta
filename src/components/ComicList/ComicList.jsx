@@ -7,7 +7,7 @@ const ComicList = ({ comic }) => {
     <div className="comic-item">
       <h2>{comic.title}</h2>
       <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} width={"250px"}/>
-      <p>{"Proximamente"}</p>
+      <p>{"Ver detalles"}</p>
     </div>
   );
 };

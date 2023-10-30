@@ -15,8 +15,9 @@ function NavBar() {
         <Link style={{ listStyle: "none" }} to="/comics">Todos los Comics</Link>
         <Link style={{ listStyle: "none" }} to="/category/day">Top del dia</Link>
         <Link style={{ listStyle: "none" }} to="/category/week">Top semanal</Link>
+        <Link style={{ listStyle: "none" }} to="/top">Más votados</Link>
         </ul>
-        <CartWidget />
+        <Link style={{ listStyle: "none "}}to="/cart"><CartWidget /></Link>
     </nav>
   );
 };

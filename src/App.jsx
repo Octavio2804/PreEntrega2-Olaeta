@@ -10,10 +10,16 @@ import Header from './components/header/header';
 import ComicsPage from './pages/ComicsPage';
 import DetailPage from './pages/DetailPage/DetailPage';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
+import TopPage from './pages/TopPages/TopPage';
+import CartView from './pages/CartView/CartView';
+// CONTEXT CARRITO
+import { CartProvider, useCart } from './CartContext';
+
 
 
 const App = ()=> {
   return(
+    <CartProvider>
     <Router>
     <>
     <div>
@@ -31,19 +37,19 @@ const App = ()=> {
     <ItemListcontainer 
     img="https://m.media-amazon.com/images/I/81Bivc7COzL.jpg"
     title="The Batman"
-    price="Añadir al carrito: $2500"/>
+    price="Proximamente"/>
     <ItemListcontainer 
     img="https://m.media-amazon.com/images/I/61O9+6+NxYL.jpg"
     title="Gladiator"
-    price="Añadir al carrito: $1700"/>
+    price="Proximamente"/>
     <ItemListcontainer 
     img="https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
     title="The Shining"
-    price="Añadir al carrito: $2800"/>
+    price="Proximamente"/>
     <ItemListcontainer 
     img="https://www.infobae.com/new-resizer/1ts6qDldBD3hPPHLDxn05ajBqKs=/arc-anglerfish-arc2-prod-infobae/public/VLFHY43STVH3PBSEULWXPRCSIY.jpeg"
     title="Oppenheimer"
-    price="Añadir al carrito: $3500"/>
+    price="Proximamente"/>
     </div>
     } 
   />
@@ -55,8 +61,13 @@ const App = ()=> {
   <Route path="/detail/:id" element={<DetailPage />} />
   // CATEGORY DE COMIC CON ID
   <Route path="/category/:categoryId" element={<CategoryPage />} />
+  // TOP SEMANAL
+  <Route path="/top" element={<TopPage />} />
+  // CARRITO
+  <Route path="/cart" element={<CartView />} />
   </Routes>
   </Router>
+  </CartProvider>
   );
 };
 
