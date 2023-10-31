@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { useCart, removeFromCart } from '../../CartContext';
+import "./CartView.css";
 
 const CartView = () => {
+  const { cartItems } = useCart();
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const newTotal = cartItems.reduce((acumular, item) => {
+      return acumular + item.prices.reduce((acumularPrecio, price) => {
+        return acumularPrecio + price.price;
+      }, 0);
+    }, 0);
+    setTotal(newTotal);
+  }, [cartItems]);
+
   return (
-    <div>CartView</div>
-  )
+    <div className='seccionCarrito'>
+      <h1>Carrito:</h1>
+      <ul>
+        {cartItems.map((item, index) => (
+          <li key={index}>
+            {item.title}
+            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt={item.title} width={"200px"} />
+            {item.prices.map((price, priceIndex) => (
+              <li key={priceIndex}>Precio: ${price.price}</li>
+            ))}
+            <button onClick={() => removeFromCart(item)}>Eliminar del carrito</button>
+          </li>
+        ))}
+      </ul>
+      <span>Total: ${total.toFixed(2)}</span>
+      <button className='compra'>Finalizar Compra</button>
+    </div>
+  );
 }
 
-export default CartView
+export default CartView;

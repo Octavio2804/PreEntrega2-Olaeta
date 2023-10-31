@@ -33,12 +33,14 @@ const CategoryPage = () => {
 
     return (
     <div className='moviePage'>
+        <p className='titulo-top'>Mira las peliculas más populares y consegui tu poster</p>
         {movieData && movieData.length > 0 ? (
              movieData.map(movie => (
              <div key={movie.id}>
                    <h1>{movie.original_title}</h1>
                    <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width={"450px"} alt={movie.original_title}/>
                    <p>{movie.overview}</p>
+                   <button>Proximamente</button>
              </div>
          ))
             ) : (

@@ -1,4 +1,3 @@
-
 import './App.css'
 // BROWSER ROUTER
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -19,8 +18,8 @@ import { CartProvider, useCart } from './CartContext';
 
 const App = ()=> {
   return(
-    <CartProvider>
     <Router>
+    <CartProvider>
     <>
     <div>
       <Header />
@@ -66,8 +65,8 @@ const App = ()=> {
   // CARRITO
   <Route path="/cart" element={<CartView />} />
   </Routes>
-  </Router>
   </CartProvider>
+  </Router>
   );
 };
 

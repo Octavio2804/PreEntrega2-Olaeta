@@ -13,8 +13,18 @@ export const CartProvider = ({ children }) => {
     setCartItems(prevItems => [...prevItems, item]);
   };
 
+  const removeFromCart = (itemRemove) => {
+    const indexToRemove = cartItems.findIndex(item => item === itemRemove);
+  
+    if (indexToRemove !== -1) {
+      const newCartItems = [...cartItems];
+      newCartItems.splice(indexToRemove, 1);
+      setCartItems(newCartItems);
+    }
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

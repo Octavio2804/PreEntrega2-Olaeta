@@ -32,7 +32,8 @@ const DetailPage = () => {
 
     const handleAddToCart = () => {
         if (comic) {
-            addToCart(comic); // Add the comic to the cart
+            addToCart(comic); 
+            history.push("/CartView");
         }
     };
 

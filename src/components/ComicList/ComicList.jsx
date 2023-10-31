@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 
 const ComicList = ({ comic }) => {
   return (
-    <div className="comic-item">
-      <h2>{comic.title}</h2>
-      <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} width={"250px"}/>
-      <p>{"Ver detalles"}</p>
+    <div className="comic-list">
+      <div className="comic-item">
+        <h2>{comic.title}</h2>
+        <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} width={"250px"}/>
+        <p>{"Ver detalles"}</p>
+      </div>
     </div>
   );
 };
