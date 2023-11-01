@@ -6,8 +6,8 @@ function Header() {
   return (
     <Link to="/">
     <div className='header'>
-        <h1>Poster City</h1>
-        <h2>Tienda de posters online</h2>
+        <h1>Geek City</h1>
+        <h2>Tienda de posters y comics online</h2>
     </div>
     </Link>
   );

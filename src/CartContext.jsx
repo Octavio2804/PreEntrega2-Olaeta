@@ -13,7 +13,7 @@ export const CartProvider = ({ children }) => {
     setCartItems(prevItems => [...prevItems, item]);
   };
 
-  const removeFromCart = (itemRemove) => {
+ const removeFromCart = (itemRemove) => {
     const indexToRemove = cartItems.findIndex(item => item === itemRemove);
   
     if (indexToRemove !== -1) {

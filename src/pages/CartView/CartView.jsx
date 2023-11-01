@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useCart, removeFromCart } from '../../CartContext';
+import { useCart } from '../../CartContext';
 import "./CartView.css";
 
 const CartView = () => {
-  const { cartItems } = useCart();
+  const { cartItems, removeFromCart} = useCart();
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
