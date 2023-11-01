@@ -4,7 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useCart } from '../../CartContext';
 
 function CartWidget() {
-  const { cartItems } = useCart(); // Access the cart context
+  const { cartItems } = useCart(); 
 
   return (
     <div>

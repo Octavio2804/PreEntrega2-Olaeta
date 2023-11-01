@@ -27,7 +27,6 @@ const CartView = () => {
       timer: 2500
     });
 
-    // Set up the timeout and redirection
     setTimeout(() => {
       navigate("/");
     }, 2500);

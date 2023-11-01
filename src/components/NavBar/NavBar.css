@@ -1,6 +1,6 @@
 .NavBar {
     display: flex;
-    justify-content: space-between; /* This will space out the ul and CartWidget */
+    justify-content: space-between; 
     align-items: center;
     background-color: white;
     padding: 1rem 2rem;
