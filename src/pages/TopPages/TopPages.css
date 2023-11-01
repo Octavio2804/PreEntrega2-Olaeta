@@ -9,3 +9,8 @@
 .TopPage h2{
     margin-top: 10px;
 }
+
+.card-container{
+    display: flex;
+    gap: 26px
+}

@@ -4,23 +4,26 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import "./TopMovieCard.css";
 
-const TopMovieCard = ({ props }) => {
+const TopMovieCard = ({ movie }) => { 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ margin: "16px"}} className='card-container'>
       <CardActionArea>
         <CardMedia
+          className='card-media'
           component="img"
-          height="140"
-          image={movies.img}
-          alt="green iguana"
+          height="440"
+          image={movie.img} 
+          alt={movie.title}
+          style={{height: "500px", width: "100%"}}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {movies.title}
+          <Typography gutterBottom variant="h5" component="div" className="card-title">
+            {movie.name} 
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Rating de votacion: {movies.rating}
+          <Typography variant="body2" color="text.secondary" className="card-rating">
+            Rating de votacion: {movie.rating} 
           </Typography>
         </CardContent>
       </CardActionArea>
